@@ -16,6 +16,7 @@ const StyledNav = styled.nav`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  background-color: white;
 
   .navIcons {
     display: flex;
@@ -24,14 +25,8 @@ const StyledNav = styled.nav`
     .icon {
       color: rgba(103, 101, 101, 1);
       font-size: 2rem;
+      margin: 0 1.5rem;
     }
-  }
-
-  //NAVLINKS
-  .navLinks {
-    display: flex;
-    flex-flow: row;
-    list-style: none;
   }
 
   //BUTTON
@@ -55,6 +50,54 @@ const StyledNav = styled.nav`
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+
+  //NAVLINKS
+  .navLinks {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    list-style: none;
+
+    .navLink {
+      color: #676565;
+      font-weight: bolder;
+      margin: 0 1.5rem;
+    }
+
+    .searchButton {
+      background-color: #151371;
+      padding: 1rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+
+      .searchIcon {
+        color: white;
+      }
+    }
+  }
+
+  .searchButton::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #151371;
+    transform: translateX(-5px);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      transform: translateX(0px);
+    }
   }
 `;
 
@@ -73,7 +116,9 @@ const Nav = () => {
         <li className="navLink">Events</li>
         <li className="navLink">Learn</li>
         <li className="navLink">Join</li>
-        <BsSearch />
+        <div className="searchButton">
+          <BsSearch className="searchIcon" />
+        </div>
       </ul>
     </StyledNav>
   );
