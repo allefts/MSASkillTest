@@ -11,6 +11,7 @@ const StyledBanner = styled.div`
     #ff655b 51.83%,
     #ffc700 100%
   );
+
   display: flex;
   flex-flow: row;
   max-height: 500px;
@@ -27,15 +28,22 @@ const StyledBanner = styled.div`
   .bannerPower {
     float: right;
   }
+
+  .peopleImage,
+  .butterflyImage,
+  .worldImage {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 const Banner = () => {
   return (
     <StyledBanner>
-      <img src={WorldImg} alt="Earth" />
-      <img src={ButterflyImg} alt="Butterfly" />
+      <img className="worldImage" src={WorldImg} alt="Earth" />
+      <img className="butterflyImage" src={ButterflyImg} alt="Butterfly" />
       <div className="bannerText">
-        <img src={PeopleImg} alt="People" />
+        <img src={PeopleImg} className="peopleImage" alt="People" />
         <h1 className="bannerTitle">
           Learn high in <br /> Demand IT Skills & earn crypto
         </h1>

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import styled from "styled-components";
 
@@ -30,27 +31,40 @@ const StyledNav = styled.nav`
   }
 
   //BUTTON
-  .navButton {
-    padding: 0.5rem;
-    border-radius: 10px;
-    border: 3px solid;
-    border-image-source: linear-gradient(
-      104.61deg,
-      #ff00b8 2.65%,
-      #ff655b 51.83%,
-      #ffc700 100%
-    );
-    border-image-slice: 1;
 
-    background: -webkit-linear-gradient(
+  .navBtnWrapper {
+    padding: 3px;
+    border-radius: 50px;
+    background: linear-gradient(
       104.61deg,
       #ff00b8 2.65%,
       #ff655b 51.83%,
       #ffc700 100%
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  }
+
+  .navButton {
+    padding: 0.3rem;
+    border-radius: 50px;
+    background: white;
+    border: 0;
+    color: inherit;
+    outline: none;
     cursor: pointer;
+
+    a {
+      font-family: Red Hat Display;
+      font-weight: 600;
+      padding: 10px;
+      background: -webkit-linear-gradient(
+        104.61deg,
+        #ff00b8 2.65%,
+        #ff655b 51.83%,
+        #ffc700 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   //NAVLINKS
@@ -110,7 +124,11 @@ const Nav = () => {
         <AiFillLinkedin className="icon" />
         <AiOutlineInstagram className="icon" />
       </div>
-      <button className="navButton">Connect Wallet</button>
+      <div className="navBtnWrapper">
+        <button className="navButton">
+          <a>Connect Wallet</a>
+        </button>
+      </div>
       <ul className="navLinks">
         <li className="navLink">Service</li>
         <li className="navLink">Events</li>
