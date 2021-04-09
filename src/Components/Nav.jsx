@@ -27,6 +27,10 @@ const StyledNav = styled.nav`
       color: rgba(103, 101, 101, 1);
       font-size: 2rem;
       margin: 0 1.5rem;
+
+      &:hover {
+        color: #ff00b8;
+      }
     }
   }
 
@@ -78,6 +82,11 @@ const StyledNav = styled.nav`
       color: #676565;
       font-weight: bolder;
       margin: 0 1.5rem;
+
+      &:hover {
+        color: #ff00b8;
+        cursor: pointer;
+      }
     }
 
     .searchButton {
@@ -123,21 +132,20 @@ const Nav = () => {
         <AiFillFacebook className="icon" />
         <AiFillLinkedin className="icon" />
         <AiOutlineInstagram className="icon" />
-      </div>
+      </div>{" "}
       <div className="navBtnWrapper">
         <button className="navButton">
-          <a>Connect Wallet</a>
-        </button>
-      </div>
+          <a> Connect Wallet </a>{" "}
+        </button>{" "}
+      </div>{" "}
       <ul className="navLinks">
-        <li className="navLink">Service</li>
-        <li className="navLink">Events</li>
-        <li className="navLink">Learn</li>
-        <li className="navLink">Join</li>
+        <li className="navLink"> Service </li>{" "}
+        <li className="navLink"> Events </li>{" "}
+        <li className="navLink"> Learn </li> <li className="navLink"> Join </li>{" "}
         <div className="searchButton">
           <BsSearch className="searchIcon" />
-        </div>
-      </ul>
+        </div>{" "}
+      </ul>{" "}
     </StyledNav>
   );
 };

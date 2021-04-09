@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Card from "./StartUpCard";
+import Card from "./CourseCards";
 
 const StyledCardSection = styled.div`
   padding: 0 2rem;

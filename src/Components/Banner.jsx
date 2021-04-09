@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import WorldImg from "../Assets/Images/Group (2).png";
+import WorldImg from "../Assets/Images/world.png";
 import PeopleImg from "../Assets/Images/Group.png";
 import ButterflyImg from "../Assets/Images/Group (1).png";
 
@@ -29,11 +29,9 @@ const StyledBanner = styled.div`
     float: right;
   }
 
-  .peopleImage,
-  .butterflyImage,
+  /* IMAGES */
   .worldImage {
-    max-width: 100%;
-    height: auto;
+    width: 20%;
   }
 `;
 
@@ -45,12 +43,12 @@ const Banner = () => {
       <div className="bannerText">
         <img src={PeopleImg} className="peopleImage" alt="People" />
         <h1 className="bannerTitle">
-          Learn high in <br /> Demand IT Skills & earn crypto
-        </h1>
+          Learn high in <br /> Demand IT Skills & earn crypto{" "}
+        </h1>{" "}
         <h2 className="bannerPower">
-          <i>powered by KoinStreet</i>
-        </h2>
-      </div>
+          <i> powered by KoinStreet </i>{" "}
+        </h2>{" "}
+      </div>{" "}
     </StyledBanner>
   );
 };

@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import Gears from "../Assets/Images/gears.png";
 
 const StyledCategory = styled.div`
   padding: 2rem;
   text-align: center;
   border-radius: 60px;
   background: white;
+  max-width: 350px;
+  height: 350px;
+  display: grid;
+  place-items: center;
 
   .cardTitle {
     font-size: 3rem;
@@ -20,7 +23,7 @@ const StyledCategory = styled.div`
   }
 `;
 
-const CategoryCard = () => {
+const CategoryCard = ({ title, imageSrc }) => {
   return (
     <div
       className="categoryCardWrapper"
@@ -32,8 +35,8 @@ const CategoryCard = () => {
       }}
     >
       <StyledCategory>
-        <h1 className="cardTitle">Engineering</h1>
-        <img src={Gears} alt="Gears" />
+        <h1 className="cardTitle">{title}</h1>
+        <img src={imageSrc} alt="Gears" />
       </StyledCategory>
     </div>
   );
