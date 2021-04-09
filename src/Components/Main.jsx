@@ -3,18 +3,17 @@ import styled from "styled-components";
 
 import Banner from "./Banner";
 import CardSection from "./CardSection";
-import CategoryCard from "./CategoryCard";
+import CategorySection from "./CategorySection";
 
 const StyledMain = styled.div`
   background-color: white;
   width: 98%;
   margin: 2rem auto;
+  padding: 2rem 0;
 
   //For now
-  //   height: 100vh;
 
   border-radius: 40px;
-  padding-top: 2rem;
 `;
 
 const Main = () => {
@@ -23,6 +22,7 @@ const Main = () => {
       <Banner />
       <CardSection title="My Courses" />
       <CardSection title="Featured Courses" />
+      <CategorySection />
     </StyledMain>
   );
 };

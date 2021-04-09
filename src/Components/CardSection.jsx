@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import Card from "./StartUpCard";
-import CategoryCard from "./CategoryCard";
 
 const StyledCardSection = styled.div`
   padding: 0 2rem;
