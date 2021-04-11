@@ -12,12 +12,17 @@ import {
 import { BsSearch } from "react-icons/bs";
 
 const StyledNav = styled.nav`
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
   background-color: white;
+
+  .navItems {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
 
   .navIcons {
     display: flex;
@@ -116,36 +121,40 @@ const StyledNav = styled.nav`
     border: 1px solid #151371;
     transform: translateX(-5px);
     z-index: -1;
-    transition: all 1s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
 
-    &:hover {
-      transform: translateX(0px);
-    }
+  .searchButton:hover:before {
+    transform: translate(-1px, -1px);
+    opacity: 0;
   }
 `;
 
 const Nav = () => {
   return (
     <StyledNav>
-      <div className="navIcons">
-        <VscTwitter className="icon" />
-        <AiFillFacebook className="icon" />
-        <AiFillLinkedin className="icon" />
-        <AiOutlineInstagram className="icon" />
-      </div>{" "}
-      <div className="navBtnWrapper">
-        <button className="navButton">
-          <a> Connect Wallet </a>{" "}
-        </button>{" "}
-      </div>{" "}
-      <ul className="navLinks">
-        <li className="navLink"> Service </li>{" "}
-        <li className="navLink"> Events </li>{" "}
-        <li className="navLink"> Learn </li> <li className="navLink"> Join </li>{" "}
-        <div className="searchButton">
-          <BsSearch className="searchIcon" />
+      <div className="navItems">
+        <div className="navIcons">
+          <VscTwitter className="icon" />
+          <AiFillFacebook className="icon" />
+          <AiFillLinkedin className="icon" />
+          <AiOutlineInstagram className="icon" />
         </div>{" "}
-      </ul>{" "}
+        <div className="navBtnWrapper">
+          <button className="navButton">
+            <a> Connect Wallet </a>{" "}
+          </button>{" "}
+        </div>{" "}
+        <ul className="navLinks">
+          <li className="navLink"> Service </li>{" "}
+          <li className="navLink"> Events </li>{" "}
+          <li className="navLink"> Learn </li>{" "}
+          <li className="navLink"> Join </li>{" "}
+          <div className="searchButton">
+            <BsSearch className="searchIcon" />
+          </div>{" "}
+        </ul>{" "}
+      </div>
     </StyledNav>
   );
 };

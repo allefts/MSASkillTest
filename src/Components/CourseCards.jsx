@@ -38,6 +38,7 @@ const StyledCard = styled.div`
       rgba(57, 15, 123, 1) 100%
     );
 
+    outline: none;
     border: none;
     width: 100%;
     padding: 0.5rem;

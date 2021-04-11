@@ -23,7 +23,11 @@ const StyledStartUpBig = styled.div`
     font-size: 2.5rem;
     color: white;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: black;
+    }
   }
 
   //QUERY
@@ -40,7 +44,7 @@ const StartUpBig = () => {
         Join Minority <br />
         Ventures Cohort
       </button>
-      <button>Help Code</button>
+      <button>Help &#10094; Code/ &#10095;</button>
     </StyledStartUpBig>
   );
 };

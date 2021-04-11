@@ -4,7 +4,8 @@ import styled from "styled-components";
 //IMAGES
 import Gear from "../Assets/Images/gear.png";
 import Gears from "../Assets/Images/gears.png";
-import World from "../Assets/Images/world.png";
+import World from "../Assets/Images/worldcolor.png";
+import Hand from "../Assets/Images/hand.png";
 
 import CategoryCard from "./CategoryCard";
 
@@ -31,7 +32,7 @@ const CategorySection = () => {
     { title: "Science", imageSrc: World },
     {
       title: "Innovation",
-      imageSrc: Gears,
+      imageSrc: Hand,
     },
     {
       title: "Programming",

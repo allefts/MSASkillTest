@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import WorldImg from "../Assets/Images/world.png";
-import PeopleImg from "../Assets/Images/Group.png";
-import ButterflyImg from "../Assets/Images/Group (1).png";
+// import PeopleImg from "../Assets/Images/Group.png";
+// import ButterflyImg from "../Assets/Images/Group (1).png";
 
 const StyledBanner = styled.div`
   background: linear-gradient(
@@ -32,6 +32,18 @@ const StyledBanner = styled.div`
   /* IMAGES */
   .worldImage {
     width: 20%;
+    animation: rotateWorld 10s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes rotateWorld {
+    0%,
+    100% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(360deg);
+    }
   }
 `;
 
@@ -39,9 +51,9 @@ const Banner = ({ phrase }) => {
   return (
     <StyledBanner>
       <img className="worldImage" src={WorldImg} alt="Earth" />
-      <img className="butterflyImage" src={ButterflyImg} alt="Butterfly" />
+      {/* <img className="butterflyImage" src={ButterflyImg} alt="Butterfly" /> */}
       <div className="bannerText">
-        <img src={PeopleImg} className="peopleImage" alt="People" />
+        {/* <img src={PeopleImg} className="peopleImage" alt="People" /> */}
         <h1 className="bannerTitle">{phrase}</h1>{" "}
         <h2 className="bannerPower">
           <i> powered by KoinStreet </i>{" "}

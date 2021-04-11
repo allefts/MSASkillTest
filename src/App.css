@@ -1,0 +1,23 @@
+.logo {
+  position: absolute;
+  width: 291px;
+  height: 239px;
+  left: 64px;
+  top: 57px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.categoryCardWrapper {
+  transition: all 0.5s ease-in-out;
+}
+
+.categoryCardWrapper:hover {
+  transform: translateY(-2%);
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+}

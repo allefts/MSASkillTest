@@ -10,16 +10,19 @@ const StyledStartUpCard = styled.div`
   padding: 2rem;
 
   .imgWrapper {
-    display: grid;
-    place-items: center;
     height: 30%;
     overflow: hidden;
 
     img {
-      max-width: 100%;
+      width: 100%;
       height: 100%;
       object-fit: contain;
     }
+  }
+
+  .imgBg{
+    width: 100%;
+    height: 100%:
   }
 
   .cardText {
@@ -80,6 +83,7 @@ const StyledStartUpCard = styled.div`
     font-weight: bold;
     font-size: 1.2em;
     border: none;
+    outline: none;
     font-family: Red Hat Display;
     text-transform: uppercase;
     border-radius: 40px;

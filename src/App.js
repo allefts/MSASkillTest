@@ -10,6 +10,8 @@ import CategorySection from "./Components/CategorySection";
 import StartUpSection from "./Components/StartUpSection";
 import StartUpBig from "./Components/StartUpBig";
 
+import LogoRock from "./Assets/Images/rock.png";
+
 const StyledMain = styled.div`
   background-color: white;
   width: 98%;
@@ -21,6 +23,7 @@ const StyledMain = styled.div`
 function App() {
   return (
     <div className="App">
+      <img src={LogoRock} className="logo" alt="" />
       <Router>
         <Switch>
           <Route exact path="/">
