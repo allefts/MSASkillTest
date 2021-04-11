@@ -35,16 +35,14 @@ const StyledBanner = styled.div`
   }
 `;
 
-const Banner = () => {
+const Banner = ({ phrase }) => {
   return (
     <StyledBanner>
       <img className="worldImage" src={WorldImg} alt="Earth" />
       <img className="butterflyImage" src={ButterflyImg} alt="Butterfly" />
       <div className="bannerText">
         <img src={PeopleImg} className="peopleImage" alt="People" />
-        <h1 className="bannerTitle">
-          Learn high in <br /> Demand IT Skills & earn crypto{" "}
-        </h1>{" "}
+        <h1 className="bannerTitle">{phrase}</h1>{" "}
         <h2 className="bannerPower">
           <i> powered by KoinStreet </i>{" "}
         </h2>{" "}

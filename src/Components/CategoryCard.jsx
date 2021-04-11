@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledCategory = styled.div`
+  flex: 1 1 25%;
   padding: 2rem;
   text-align: center;
   border-radius: 60px;

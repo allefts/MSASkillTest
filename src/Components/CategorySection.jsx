@@ -19,6 +19,7 @@ const StyledCategorySection = styled.div`
 
   .categoryCards {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
@@ -51,13 +52,7 @@ const CategorySection = () => {
   return (
     <StyledCategorySection>
       <h1 className="categoryTitle">By Category</h1>
-      <div className="categoryCards">
-        {CategoryCardsRender}
-        {/* <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard /> */}
-      </div>
+      <div className="categoryCards">{CategoryCardsRender}</div>
     </StyledCategorySection>
   );
 };
