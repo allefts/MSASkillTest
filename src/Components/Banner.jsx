@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import WorldImg from "../Assets/Images/world.png";
-// import PeopleImg from "../Assets/Images/Group.png";
-// import ButterflyImg from "../Assets/Images/Group (1).png";
+import PeopleImg from "../Assets/Images/Group.png";
+import ButterflyImg from "../Assets/Images/butterfly.png";
+import "../App.css";
 
 const StyledBanner = styled.div`
   background: linear-gradient(
@@ -14,7 +15,6 @@ const StyledBanner = styled.div`
 
   display: flex;
   flex-flow: row;
-  max-height: 500px;
   overflow: hidden;
   align-items: center;
   justify-content: space-around;
@@ -50,15 +50,17 @@ const StyledBanner = styled.div`
 const Banner = ({ phrase }) => {
   return (
     <StyledBanner>
+      {/* <div className="bannerBg"> */}
       <img className="worldImage" src={WorldImg} alt="Earth" />
-      {/* <img className="butterflyImage" src={ButterflyImg} alt="Butterfly" /> */}
+      <img className="butterflyImage" src={ButterflyImg} alt="Butterfly" />
       <div className="bannerText">
-        {/* <img src={PeopleImg} className="peopleImage" alt="People" /> */}
+        <img src={PeopleImg} className="peopleImage" alt="People" />
         <h1 className="bannerTitle">{phrase}</h1>{" "}
         <h2 className="bannerPower">
           <i> powered by KoinStreet </i>{" "}
         </h2>{" "}
       </div>{" "}
+      {/* </div> */}
     </StyledBanner>
   );
 };

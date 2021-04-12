@@ -18,7 +18,6 @@ const StyledCategory = styled.div`
     font-size: 3rem;
     color: #151371;
     font-weight: 400;
-    // margin-bottom: 10px;
   }
 
   .imgContainer {

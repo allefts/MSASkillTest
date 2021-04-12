@@ -43,6 +43,9 @@ function App() {
               <CategorySection />
             </StyledMain>
           </Route>
+          <Route exact path="/bla">
+            <Banner phrase="Learn high in Demand IT Skills & earn crypto." />
+          </Route>
         </Switch>
       </Router>
     </div>

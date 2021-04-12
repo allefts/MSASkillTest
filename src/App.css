@@ -16,6 +16,15 @@
   transform: translateY(-2%);
 }
 
+/* BANNER */
+/* .bannerBg {
+  height: 500px;
+  background-image: url("./Assets/Images/world.png"),
+    url("./Assets/Images/butterfly.png"), url("./Assets/Images/Group.png");
+  background-position: bottom left, center center, top right;
+  background-repeat: no-repeat;
+} */
+
 @media screen and (max-width: 900px) {
   .logo {
     display: none;
