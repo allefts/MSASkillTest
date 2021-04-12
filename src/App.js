@@ -1,6 +1,6 @@
 import "./App.css";
 import styled from "styled-components";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 //Components
 import Nav from "./Components/Nav";
@@ -23,8 +23,10 @@ const StyledMain = styled.div`
 function App() {
   return (
     <div className="App">
-      <img src={LogoRock} className="logo" alt="" />
       <Router>
+        <Link to="/">
+          <img src={LogoRock} className="logo" alt="" />
+        </Link>
         <Switch>
           <Route exact path="/">
             <Nav />
