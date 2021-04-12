@@ -88,6 +88,7 @@ const StyledStartUpCard = styled.div`
     text-transform: uppercase;
     border-radius: 40px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
   }
 
   .giveBtn {
@@ -107,10 +108,9 @@ const StyledStartUpCard = styled.div`
     );
   }
 
-  // .learnBtn > * {
-  //   text-decoration: none;
-  //   color: inherit;
-  // }
+  .learnBtn:hover, .giveBtn:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
 
   .percentFunded {
     float: right;

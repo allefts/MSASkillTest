@@ -29,7 +29,10 @@ function App() {
           <Route exact path="/">
             <Nav />
             <StyledMain>
-              <Banner phrase="Invest directly into minority innovations" />
+              <Banner
+                phrase1="Invest directly"
+                phrase2="into minority innovations"
+              />
               <StartUpSection />
               <StartUpBig />
             </StyledMain>
@@ -37,7 +40,10 @@ function App() {
           <Route exact path="/learn">
             <Nav />
             <StyledMain>
-              <Banner phrase="Learn high in Demand IT Skills & earn crypto." />
+              <Banner
+                phrase1="Learn high in"
+                phrase2="Demand IT Skills & earn crypto."
+              />
               <CardSection title="My Courses" />
               <CardSection title="Featured Courses" />
               <CategorySection />

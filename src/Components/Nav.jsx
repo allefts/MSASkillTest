@@ -128,6 +128,13 @@ const StyledNav = styled.nav`
     transform: translate(-1px, -1px);
     opacity: 0;
   }
+
+  @media screen and (max-width: 1000px) {
+    .navItems {
+      width: 100%;
+      flex-flow: row wrap;
+    }
+  }
 `;
 
 const Nav = () => {

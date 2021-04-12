@@ -25,6 +25,10 @@ const StyledBanner = styled.div`
     font-size: 4rem;
   }
 
+  .bannerTitle:first-child {
+    display: inline-block;
+  }
+
   .bannerPower {
     float: right;
   }
@@ -45,17 +49,31 @@ const StyledBanner = styled.div`
       transform: rotateY(360deg);
     }
   }
+
+  @media screen and (max-width: 1620px) {
+    .peopleImage,
+    .butterflyImage {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .bannerTitle {
+      font-size: 2rem;
+    }
+  }
 `;
 
-const Banner = ({ phrase }) => {
+const Banner = ({ phrase1, phrase2 }) => {
   return (
     <StyledBanner>
       {/* <div className="bannerBg"> */}
       <img className="worldImage" src={WorldImg} alt="Earth" />
       <img className="butterflyImage" src={ButterflyImg} alt="Butterfly" />
       <div className="bannerText">
+        <h1 className="bannerTitle">{phrase1}</h1>{" "}
         <img src={PeopleImg} className="peopleImage" alt="People" />
-        <h1 className="bannerTitle">{phrase}</h1>{" "}
+        <h1 className="bannerTitle">{phrase2}</h1>
         <h2 className="bannerPower">
           <i> powered by KoinStreet </i>{" "}
         </h2>{" "}
