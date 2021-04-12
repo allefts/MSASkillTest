@@ -115,6 +115,13 @@ const StyledStartUpCard = styled.div`
   .percentFunded {
     float: right;
   }
+
+
+  @media screen and (max-width: 400px){
+    .giveBtn, .learnBtn{
+      padding: .25rem 1rem;
+    }
+  }
 `;
 
 const StartUpCard = ({
